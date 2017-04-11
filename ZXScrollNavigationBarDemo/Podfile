@@ -9,5 +9,5 @@ target 'ZXScrollNavigationBar' do
 
     pod 'Masonry'
     pod 'ReactiveObjC'
-    pod 'ZXScrollNavigationBar'
+    pod 'ZXScrollNavigationBar', '~> 0.0.1'
 end

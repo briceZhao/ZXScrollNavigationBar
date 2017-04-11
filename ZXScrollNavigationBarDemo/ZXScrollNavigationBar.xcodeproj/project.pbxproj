@@ -389,6 +389,7 @@
 				65B6E5461E9C95C200E1BF99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
