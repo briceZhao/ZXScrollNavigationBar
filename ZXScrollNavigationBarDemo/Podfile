@@ -1,13 +1,13 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '8.0'
+
 
 target 'ZXScrollNavigationBar' do
+    platform :ios, '8.0'
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-
   # Pods for ZXScrollNavigationBar
-
+  
     pod 'Masonry'
-    pod 'ReactiveObjC'
-    pod 'ZXScrollNavigationBar', '~> 0.0.1'
+    pod 'ZXScrollNavigationBar'
+    
 end
