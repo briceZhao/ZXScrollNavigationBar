@@ -24,3 +24,6 @@ use_frameworks!
 
 ```
 
+## Screenshot
+
+![scrollNavbar.gif](http://upload-images.jianshu.io/upload_images/2473291-dca26b5a810ad1f1.gif?imageMogr2/auto-orient/strip)
