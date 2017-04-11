@@ -76,7 +76,7 @@ static const void *kNavigationBarKey = &kNavigationBarKey;
 
 - (void)zx_loadNavigationBar
 {
-    UINavigationBar *navbar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 20, [UIScreen screenW], 44)];
+    UINavigationBar *navbar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, 44)];
     [self setNavigationBar:navbar];
 }
 

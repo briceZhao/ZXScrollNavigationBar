@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ZXScrollNavigationBar"
   s.version      = "0.0.1"
-  s.summary      = "A short description of ZXScrollNavigationBar."
+  s.summary      = "A category of UIViewController."
   s.description  = <<-DESC
 	This is a demo about navigationBar, which implement by objective-C.
                    DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "briceZhao" => "zx_brice@126.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "http://github.com/briceZhao/ZXScrollNavigationBar.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/briceZhao/ZXScrollNavigationBar.git", :tag => "#{s.version}" }
   s.source_files  = "ZXScrollNavigationBar/*"
   s.requires_arc = true 
   s.framework  = "UIKit"
