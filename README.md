@@ -1,5 +1,4 @@
-
-![ScrollingNavbar.png](https://github.com/briceZhao/ZXScrollNavigationBar/blob/master/ZXScrollNavigationBarDemo/ScreenShot/ZXScrollNavigationbar_IMG.png)
+![ScrollingNavbar.png](https://github.com/briceZhao/ZXScrollNavigationBar/blob/d84e74c712dafc7b626188e03f840ca4f7b6c2f3/ZXScrollNavigationbar_IMG.png?raw=true)
 
 <p align="left">
 <a href="https://github.com/GTMYang/GTMRefresh"><img src="https://img.shields.io/badge/platform-ios-lightgrey.svg"></a>
@@ -25,3 +24,6 @@ use_frameworks!
 ```
 
 ## Screenshot
+![ScrollingNavbar_01](https://github.com/briceZhao/ZXScrollNavigationBar/blob/d84e74c712dafc7b626188e03f840ca4f7b6c2f3/ZXScrollNavigationBar_01.gif?raw=true)
+
+![ScrollingNavbar_02](https://github.com/briceZhao/ZXScrollNavigationBar/blob/d84e74c712dafc7b626188e03f840ca4f7b6c2f3/ZXScrollNavigationBar_02.gif?raw=true)
