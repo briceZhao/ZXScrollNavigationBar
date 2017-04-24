@@ -1,5 +1,5 @@
 
-![scrollNavbar.png](https://github.com/briceZhao/ZXScrollNavigationBar/tree/master/ZXScrollNavigationBarDemo/ScreenShot/ZXScrollNavigationbar_IMG.png)
+![ScrollingNavbar.png](https://github.com/briceZhao/ZXScrollNavigationBar/blob/master/ZXScrollNavigationBarDemo/ScreenShot/ZXScrollNavigationbar_IMG.png)
 
 <p align="left">
 <a href="https://github.com/GTMYang/GTMRefresh"><img src="https://img.shields.io/badge/platform-ios-lightgrey.svg"></a>
