@@ -1,37 +1,35 @@
 //
-//  ViewController.m
+//  HomeViewController.m
 //  ZXScrollNavigationBar
 //
-//  Created by brice Mac on 2017/4/11.
+//  Created by brice Mac on 2017/5/2.
 //  Copyright © 2017年 briceZhao. All rights reserved.
 //
 
 #define MAS_SHORTHAND
 #define MAS_SHORTHAND_GLOBALS
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import <UIViewController+ZXExtension.h>
 #import <Masonry.h>
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) UITableView *tableView;
 
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder
+- (instancetype)init
 {
-    self = [super initWithCoder:aDecoder];
+    self = [super init];
     if (self) {
         
         self.zx_interactiveNavigationBarHidden = YES;
-        
     }
     return self;
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,7 +41,7 @@
     [self.view addSubview:self.navigationBar];
     
     UIView *top = [[UIView alloc]init];
-    top.backgroundColor = [UIColor purpleColor];
+    top.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:top];
     [top makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.navigationBar.bottom).offset(1);
@@ -70,9 +68,8 @@
 {
     [super viewWillAppear:animated];
     
-    
+    //跟随滚动的核心方法
     [self followScrollView:self.tableView];
-    
 }
 
 
@@ -88,4 +85,16 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewController *vc = [[UITableViewController alloc]init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 @end
+
+
+
+

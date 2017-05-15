@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +17,46 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self configureNavigationBarAppearance];
+    
+    [self configureWindow];
+    
     return YES;
+}
+
+- (void)configureNavigationBarAppearance
+{
+    [UIBarButtonItem appearance].tintColor = [UIColor colorWithRed:0.31 green:0.29 blue:0.27 alpha:1.00];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:
+     @{
+       NSForegroundColorAttributeName: [UIColor darkTextColor],
+       NSFontAttributeName: [UIFont systemFontOfSize:14.f]
+       } forState:UIControlStateNormal];
+    
+    [UINavigationBar appearance].tintColor = [UIColor colorWithRed:0.31 green:0.29 blue:0.27 alpha:1.00];
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     @{
+       NSForegroundColorAttributeName: [UIColor darkTextColor],
+       NSFontAttributeName: [UIFont systemFontOfSize:16.f]
+       }];
+    
+}
+
+- (void)configureWindow
+{
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    HomeViewController *homevc = [[HomeViewController alloc]init];
+    
+    UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homevc];
+    
+    self.window.rootViewController = homeNav;
+    
+    [self.window makeKeyAndVisible];
+    
 }
 
 
